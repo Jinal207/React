@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        background-color: lightblue;
+        justify-content: center;
+    }
+
+    .a {
+        background: #fff;
+        width: 20%;
+        padding: 30px;
+    }
+</style>
+
+<body onload="myFunction()">
+    <script src="Form.js"></script>
+    <div class="a">
+        <h2>Registration Form</h2>
+        <form onsubmit="addData()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="gender">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="gender">Male</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email"><br><br>
+
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" placeholder="Enter Your Number"><br><br>
+
+            <label for="hobby">Hobby:</label>
+            <input type="checkbox" id="reading" value="Reading" name="hobby">
+            <label for="hobby1">Reading</label>
+            <input type="checkbox" id="playing" value="Playing" name="hobby">
+            <label for="hobby2">Playing</label>
+            <input type="checkbox" id="travelling" value="Travelling" name="hobby">
+            <label for="hobby3">Travelling</label><br><br>
+
+            <button type="button" onclick="addData()" class="add">Submit</button>
+            <button type="button" onclick="addData()" class="update">Update</button>
+            <!-- <button type="button" onclick="showData()">Show</button> -->
+            <div id="main"></div>
+    </div>
+    </form>
+</body>
+
+</html>
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript ForEach</h2>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value) {
+            txt += value + "<br>";
+        }
+    </script>
+</body>
+
+</html>
